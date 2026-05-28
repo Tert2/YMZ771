@@ -1,0 +1,145 @@
+:root {
+    --bg: #f3f6fb;
+    --card: #ffffff;
+    --text: #1e293b;
+    --sub: #64748b;
+    --line: #dbe3ec;
+    --accent: #2563eb;
+    --accent2: #4f46e5;
+    --shadow: rgba(0,0,0,0.08);
+    --head: #eaf3ff;
+}
+
+@media (prefers-color-scheme: dark) {
+
+    :root {
+        --bg: #0f172a;
+        --card: #1e293b;
+        --text: #f8fafc;
+        --sub: #94a3b8;
+        --line: #334155;
+        --accent: #60a5fa;
+        --accent2: #818cf8;
+        --shadow: rgba(0,0,0,0.4);
+        --head: #1d304a;
+    }
+
+}
+
+
+h3 {
+    padding: 0.5em;/*文字周りの余白*/
+    color: var(--text);/*文字色*/
+    background: var(--head);
+    border-bottom: solid 3px #516ab6;/*下線*/
+  }
+
+.box1 {
+    text-align: center;
+    padding: 2rem;
+    margin: 0 calc(50% - 50vw);
+    color: var(--card);
+    background:
+        linear-gradient(
+            135deg,
+            var(--accent),
+            var(--accent2)
+        );
+    box-shadow: 0 6px 20px var(--shadow);
+}
+
+
+
+.box1 p {
+    margin: 0; 
+    padding: 0;
+}
+body {
+    background: var(--bg);
+    color: var(--text);
+    font-family:
+        "Noto Sans JP",
+        sans-serif;
+    line-height: 1.8;
+    margin: 0;
+}
+
+/* 全体レイアウト */
+.layout {
+    display: flex;
+    max-width: 1400px;
+    margin: auto;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+/* 左サイドバー */
+.sidebar {
+    width: 220px;
+    height: fit-content;
+    position: sticky;
+    top: 2rem;
+    background: var(--card);
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+/* リンク */
+.sidebar a {
+    color: var(--text);
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    color: var(--accent);
+}
+
+/* 本文 */
+main {
+    flex: 1;
+    background: var(--card);
+    padding: 2rem;
+    box-shadow: 0 2px 8px var(--shadow);
+}
+
+main p {
+
+    padding: 0;
+}
+
+.ulbox {
+    padding: 10px 30px;
+    margin: 2em 0;
+    background: rgb(242, 171, 171);
+    box-shadow: 0px 0px 0px 10px rgb(242, 171, 171);
+    border: dashed 2px var(--card);
+}
+.ulbox p {
+    padding-left: 30px;
+}
+
+img {
+    max-width: 800px;
+    max-height: 400px;
+}
+
+.imgbox {
+    max-width: 300px;
+    max-height: 700px;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+figcaption {
+text-align: center;
+}
+
+.box3 {
+    text-align: center;
+}
+
+
